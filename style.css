@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+  }
+  
+  p {
+    color: white;
+    font-family: monospace;
+    text-align:center;
+  }
+  
+  h1 {
+    color: white;
+    text-align:center;
+  }
+  
+  h2 {
+    color: white;
+    text-align:center
+  }
+  
+  h3 {
+    color: white;
+    text-align:center
+  }
+  
+  h4{
+    color: white;
+    text-align:center
+  }
+  
+  ul {
+    color: white;
+    text-align:center
+  }
+  
+  ol {
+    color: white;
+    text-align:center;
+    font-family: monospace;
+  }
+  
+  a {
+    color: white;
+    font-style:italic;
+    font-family:monospace;
+    text-align: center;
+    display: block;
+  }
+  
+  .mainpageTITLE {
+    font-family: sans-serif;
+  }
+  
+  .mainpageTEXT {
+    font-family:sans-serif;
+  }
+  
+  .kobe {
+    box-shadow: 8px 8px purple;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  .derozan {
+    box-shadow: 8px 8px red;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  .kyrie {
+    box-shadow: 8px 8px #ffffff;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  .jordan {
+    box-shadow: 8px 8px orangered;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  .stockton {
+    box-shadow: 8px 8px navy;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  .curry {
+    box-shadow: 8px 8px yellow;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  #iq {
+    box-shadow: 8px 8px #00e8ff;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  #iq2 {
+    box-shadow: 8px 8px #10ff00;
+    width: 200px;
+    border-radius: 20px;
+  }
