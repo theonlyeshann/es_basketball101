@@ -26,7 +26,7 @@ export default function Home() {
               alt="Kobe Workout"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#800080]"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto"
             />
           </div>
           <Link href="/fitness" className="text-white italic font-mono block">
@@ -42,7 +42,7 @@ export default function Home() {
               alt="Kyrie Dribble"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff]"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto"
             />
           </div>
           <Link href="/dribbling" className="text-white italic font-mono block">
@@ -58,7 +58,7 @@ export default function Home() {
               alt="Stockton Pass"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#000080]"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto"
             />
           </div>
           <Link href="/passing" className="text-white italic font-mono block">
@@ -74,7 +74,7 @@ export default function Home() {
               alt="Curry Shot"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00]"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto"
             />
           </div>
           <Link href="/shooting" className="text-white italic font-mono block">
@@ -90,7 +90,7 @@ export default function Home() {
               alt="Kerr Coach"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00]"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto"
             />
           </div>
           <Link href="/basketball-iq" className="text-white italic font-mono block">

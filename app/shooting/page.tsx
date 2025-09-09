@@ -5,7 +5,9 @@ import Image from 'next/image'
 export default function ShootingPage() {
   return (
     <div className="container mx-auto px-4 py-8 text-center">
-      <h2 className="text-3xl font-bold mb-8 text-white">• SHOOTING</h2>
+      <h2 className="text-3xl font-bold mb-8 text-white">
+        • SHOOTING
+      </h2>
       
       <p className="text-white font-mono mb-8 max-w-4xl mx-auto text-center">
         Shooting is the most obvious skill in basketball - it's how you score points. Good shooters 

@@ -5,7 +5,9 @@ import Image from 'next/image'
 export default function SecretPage() {
   return (
     <div className="container mx-auto px-4 py-8 text-center">
-      <h2 className="text-3xl font-bold mb-8 text-white">• THE SECRET</h2>
+      <h2 className="text-3xl font-bold mb-8 text-white">
+        • THE SECRET
+      </h2>
       
       <p className="text-white font-mono mb-8 max-w-4xl mx-auto text-center">
         The secret that all great athletes know: there is no secret. Success comes from consistent 
