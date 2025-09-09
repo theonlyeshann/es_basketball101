@@ -26,7 +26,7 @@ export default function Home() {
               alt="Kobe Workout"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#800080] cursor-pointer"
             />
           </div>
           <Link href="/fitness" className="text-white italic font-mono block">
@@ -42,7 +42,7 @@ export default function Home() {
               alt="Kyrie Dribble"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff]"
             />
           </div>
           <Link href="/dribbling" className="text-white italic font-mono block">
@@ -58,7 +58,7 @@ export default function Home() {
               alt="Stockton Pass"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#000080]"
             />
           </div>
           <Link href="/passing" className="text-white italic font-mono block">
@@ -74,7 +74,7 @@ export default function Home() {
               alt="Curry Shot"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00]"
             />
           </div>
           <Link href="/shooting" className="text-white italic font-mono block">
@@ -90,7 +90,7 @@ export default function Home() {
               alt="Kerr Coach"
               width={200}
               height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto"
+              className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00]"
             />
           </div>
           <Link href="/basketball-iq" className="text-white italic font-mono block">
