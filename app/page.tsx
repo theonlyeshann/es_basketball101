@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -8,28 +8,29 @@ export default function Home() {
       <h1 className="text-4xl font-bold mb-4 text-white font-sans">
         Basketball 101
       </h1>
-
+      
       <h3 className="text-xl mb-8 text-white font-sans">
         Dominating the basics is what you need to be great.
       </h3>
 
       <p className="mb-8 text-white font-mono text-center">
-        Here are the basic skills to need to master before moving onto new
-        advanced practices:
+        Here are the basic skills to need to master before moving onto new advanced practices:
       </p>
-
+      
       <div className="space-y-8">
         {/* Fitness Section */}
         <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Image
-              src="/images/BRYANT24-WORKOUT.png"
-              alt="Kobe Workout"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#800080] cursor-pointer"
-            />
-          </div>
+          <Link href="/fitness">
+            <div className="mb-4">
+              <Image
+                src="/images/BRYANT24-WORKOUT.png"
+                alt="Kobe Workout"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#800080] cursor-pointer"
+              />
+            </div>
+          </Link>
           <Link href="/fitness" className="text-white italic font-mono block">
             Fitness
           </Link>
@@ -37,15 +38,17 @@ export default function Home() {
 
         {/* Dribbling Section */}
         <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Image
-              src="/images/KI11-DRIBBLING.jpeg"
-              alt="Kyrie Dribble"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffffff] cursor-pointer"
-            />
-          </div>
+          <Link href="/dribbling">
+            <div className="mb-4">
+              <Image
+                src="/images/KI11-DRIBBLING.jpeg"
+                alt="Kyrie Dribble"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffffff] cursor-pointer"
+              />
+            </div>
+          </Link>
           <Link href="/dribbling" className="text-white italic font-mono block">
             Dribbling
           </Link>
@@ -53,15 +56,17 @@ export default function Home() {
 
         {/* Passing Section */}
         <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Image
-              src="/images/JS12-PASSING.jpeg"
-              alt="Stockton Pass"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#000080] cursor-pointer"
-            />
-          </div>
+          <Link href="/passing">
+            <div className="mb-4">
+              <Image
+                src="/images/JS12-PASSING.jpeg"
+                alt="Stockton Pass"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#000080] cursor-pointer"
+              />
+            </div>
+          </Link>
           <Link href="/passing" className="text-white italic font-mono block">
             Passing
           </Link>
@@ -69,15 +74,17 @@ export default function Home() {
 
         {/* Shooting Section */}
         <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Image
-              src="/images/SC30-SHOOTING.jpeg"
-              alt="Curry Shot"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffff00] cursor-pointer"
-            />
-          </div>
+          <Link href="/shooting">
+            <div className="mb-4">
+              <Image
+                src="/images/SC30-SHOOTING.jpeg"
+                alt="Curry Shot"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffff00] cursor-pointer"
+              />
+            </div>
+          </Link>
           <Link href="/shooting" className="text-white italic font-mono block">
             Shooting
           </Link>
@@ -85,19 +92,18 @@ export default function Home() {
 
         {/* Basketball IQ Section */}
         <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Image
-              src="/images/STEVEKERR-COACHING.jpeg"
-              alt="Kerr Coach"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#10ff00] cursor-pointer"
-            />
-          </div>
-          <Link
-            href="/basketball-iq"
-            className="text-white italic font-mono block"
-          >
+          <Link href="/basketball-iq">
+            <div className="mb-4">
+              <Image
+                src="/images/STEVEKERR-COACHING.jpeg"
+                alt="Kerr Coach"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#10ff00] cursor-pointer"
+              />
+            </div>
+          </Link>
+          <Link href="/basketball-iq" className="text-white italic font-mono block">
             Basketball IQ
           </Link>
         </div>
@@ -112,5 +118,5 @@ export default function Home() {
         </Link>
       </div>
     </div>
-  );
+  )
 }
