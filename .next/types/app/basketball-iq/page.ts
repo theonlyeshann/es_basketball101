@@ -1,4 +1,4 @@
-// File: /home/runner/workspace/app/basketball-iq/page.tsx
+// File: /Users/eshannsaxena/Documents/es_basketball101/app/basketball-iq/page.tsx
 import * as entry from '../../../../app/basketball-iq/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
