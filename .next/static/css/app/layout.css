@@ -39,6 +39,12 @@
 .text-center {
   text-align: center;
 }
+.text-balance {
+  text-wrap: balance;
+}
+.text-wrap {
+  text-wrap: wrap;
+}
 .italic {
   font-style: italic;
 }
@@ -93,10 +99,42 @@
     }
   }
 }
+.hover\:shadow-\[12px_12px_0px_0px_\#10ff00\] {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 12px 12px 0px 0px var(--tw-shadow-color, #10ff00);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.hover\:shadow-\[12px_12px_0px_0px_\#000080\] {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 12px 12px 0px 0px var(--tw-shadow-color, #000080);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
 .hover\:shadow-\[12px_12px_0px_0px_\#800080\] {
   &:hover {
     @media (hover: hover) {
       --tw-shadow: 12px 12px 0px 0px var(--tw-shadow-color, #800080);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.hover\:shadow-\[12px_12px_0px_0px_\#ffff00\] {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 12px 12px 0px 0px var(--tw-shadow-color, #ffff00);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+}
+.hover\:shadow-\[12px_12px_0px_0px_\#ffffff\] {
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 12px 12px 0px 0px var(--tw-shadow-color, #ffffff);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
