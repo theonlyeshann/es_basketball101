@@ -20,19 +20,19 @@ export default function Home() {
 
       <div className="space-y-8">
         {/* Fitness Section */}
-        <Link href="/fitness">
         <div className="flex flex-col items-center">
           <div className="mb-4">
-            <Image
-              src="/images/BRYANT24-WORKOUT.png"
-              alt="Kobe Workout"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#800080] cursor-pointer"
-            />
+            <Link href="/fitness" aria-label="Fitness image">
+              <Image
+                src="/images/BRYANT24-WORKOUT.png"
+                alt="Kobe Workout"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#800080] cursor-pointer"
+              />
+            </Link>
           </div>
-          </Link> 
-          <Link href= className="text-white italic font-mono block">
+          <Link href="/fitness" className="text-white italic font-mono block">
             Fitness
           </Link>
         </div>
@@ -40,13 +40,15 @@ export default function Home() {
         {/* Dribbling Section */}
         <div className="flex flex-col items-center">
           <div className="mb-4">
-            <Image
-              src="/images/KI11-DRIBBLING.jpeg"
-              alt="Kyrie Dribble"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffffff] cursor-pointer"
-            />
+            <Link href="/dribbling" aria-label="Dribbling image">
+              <Image
+                src="/images/KI11-DRIBBLING.jpeg"
+                alt="Kyrie Dribble"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffffff] cursor-pointer"
+              />
+            </Link>
           </div>
           <Link href="/dribbling" className="text-white italic font-mono block">
             Dribbling
@@ -56,13 +58,15 @@ export default function Home() {
         {/* Passing Section */}
         <div className="flex flex-col items-center">
           <div className="mb-4">
-            <Image
-              src="/images/JS12-PASSING.jpeg"
-              alt="Stockton Pass"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#000080] cursor-pointer"
-            />
+            <Link href="/passing" aria-label="Passing image">
+              <Image
+                src="/images/JS12-PASSING.jpeg"
+                alt="Stockton Pass"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#000080] cursor-pointer"
+              />
+            </Link>
           </div>
           <Link href="/passing" className="text-white italic font-mono block">
             Passing
@@ -72,13 +76,15 @@ export default function Home() {
         {/* Shooting Section */}
         <div className="flex flex-col items-center">
           <div className="mb-4">
-            <Image
-              src="/images/SC30-SHOOTING.jpeg"
-              alt="Curry Shot"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffff00] cursor-pointer"
-            />
+            <Link href="/shooting" aria-label="Shooting image">
+              <Image
+                src="/images/SC30-SHOOTING.jpeg"
+                alt="Curry Shot"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffff00] cursor-pointer"
+              />
+            </Link>
           </div>
           <Link href="/shooting" className="text-white italic font-mono block">
             Shooting
@@ -88,13 +94,15 @@ export default function Home() {
         {/* Basketball IQ Section */}
         <div className="flex flex-col items-center">
           <div className="mb-4">
-            <Image
-              src="/images/STEVEKERR-COACHING.jpeg"
-              alt="Kerr Coach"
-              width={200}
-              height={200}
-              className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#10ff00] cursor-pointer"
-            />
+            <Link href="/basketball-iq" aria-label="Basketball IQ image">
+              <Image
+                src="/images/STEVEKERR-COACHING.jpeg"
+                alt="Kerr Coach"
+                width={200}
+                height={200}
+                className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#10ff00] cursor-pointer"
+              />
+            </Link>
           </div>
           <Link
             href="/basketball-iq"
