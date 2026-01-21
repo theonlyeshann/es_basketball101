@@ -1,4 +1,4 @@
-// File: /Users/eshannsaxena/Documents/es_basketball101/app/layout.tsx
+// File: /Users/eshannsaxena/Documents/MY STUFF/BASKETBALL 101/es_basketball101/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
