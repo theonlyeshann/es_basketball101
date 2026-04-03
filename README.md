@@ -3,7 +3,7 @@
 ## Overview
 Modernizing a high school basketball fundamentals website from basic HTML/CSS to a modern NextJS/React application. The project teaches basketball fundamentals, including fitness, dribbling, passing, shooting, and basketball IQ.
 
-## Recent Changes (September 2025)
+## Recent Changes
 - ✅ Converted from static HTML/CSS to NextJS with TypeScript
 - ✅ Implemented modern React components for all pages
 - ✅ Added Tailwind CSS for styling with custom shadows and effects
