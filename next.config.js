@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  allowedDevOrigins: ['*'],
+  allowedDevOrigins: ['*.replit.dev', '*.spock.replit.dev'],
 }
 
 module.exports = nextConfig
