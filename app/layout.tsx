@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import React from 'react'
 import './globals.css'
+import Chatbot from '@/components/Chatbot'
 
 export const metadata: Metadata = {
   title: 'Basketball 101',
@@ -14,10 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-black text-white min-h-screen">
+      <body className="text-white min-h-screen">
         <main>
           {children}
         </main>
+        <Chatbot />
       </body>
     </html>
   )

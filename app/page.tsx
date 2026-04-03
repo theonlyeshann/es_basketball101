@@ -2,124 +2,102 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+const skills = [
+  {
+    href: "/fitness",
+    src: "/images/BRYANT24-WORKOUT.png",
+    alt: "Kobe Workout",
+    label: "Fitness",
+    shadow: "#800080",
+  },
+  {
+    href: "/dribbling",
+    src: "/images/KI11-DRIBBLING.jpeg",
+    alt: "Kyrie Dribble",
+    label: "Dribbling",
+    shadow: "#ffffff",
+  },
+  {
+    href: "/passing",
+    src: "/images/JS12-PASSING.jpeg",
+    alt: "Stockton Pass",
+    label: "Passing",
+    shadow: "#000080",
+  },
+  {
+    href: "/shooting",
+    src: "/images/SC30-SHOOTING.jpeg",
+    alt: "Curry Shot",
+    label: "Shooting",
+    shadow: "#ffff00",
+  },
+  {
+    href: "/basketball-iq",
+    src: "/images/STEVEKERR-COACHING.jpeg",
+    alt: "Kerr Coach",
+    label: "Basketball IQ",
+    shadow: "#10ff00",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8 text-center">
-      <h1 className="text-4xl font-bold mb-4 text-white font-sans">
-        Basketball 101
-      </h1>
-
-      <h3 className="text-xl mb-8 text-white font-sans">
-        Dominating the basics is what you need to be great.
-      </h3>
-
-      <p className="mb-8 text-white font-mono text-center">
-        Here are the basic skills to need to master before moving onto new
-        advanced practices:
-      </p>
-
-      <div className="space-y-8">
-        {/* Fitness Section */}
-        <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Link href="/fitness" aria-label="Fitness image">
-              <Image
-                src="/images/BRYANT24-WORKOUT.png"
-                alt="Kobe Workout"
-                width={200}
-                height={200}
-                className="rounded-3xl shadow-[8px_8px_0px_0px_#800080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#800080] cursor-pointer"
-              />
-            </Link>
-          </div>
-          <Link href="/fitness" className="text-white italic font-mono block">
-            Fitness
-          </Link>
+    <div className="min-h-screen">
+      <div className="container mx-auto px-4 py-12 text-center max-w-2xl">
+        <div className="mb-10">
+          <h1 className="text-5xl font-bold mb-3 text-white drop-shadow-lg">
+            Basketball 101
+          </h1>
+          <h3 className="text-xl mb-3 text-orange-200 font-sans">
+            Dominating the basics is what you need to be great.
+          </h3>
+          <p className="text-white/70 font-mono text-sm">
+            Master these fundamentals before moving on to advanced practices:
+          </p>
         </div>
 
-        {/* Dribbling Section */}
-        <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Link href="/dribbling" aria-label="Dribbling image">
-              <Image
-                src="/images/KI11-DRIBBLING.jpeg"
-                alt="Kyrie Dribble"
-                width={200}
-                height={200}
-                className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffffff] cursor-pointer"
-              />
-            </Link>
-          </div>
-          <Link href="/dribbling" className="text-white italic font-mono block">
-            Dribbling
-          </Link>
+        <div className="space-y-6">
+          {skills.map((skill) => (
+            <div key={skill.href} className="flex flex-col items-center group">
+              <Link href={skill.href} aria-label={skill.label}>
+                <div className="relative mb-3">
+                  <Image
+                    src={skill.src}
+                    alt={skill.alt}
+                    width={200}
+                    height={200}
+                    className="rounded-3xl mx-auto transform transition-all duration-300 group-hover:scale-105 cursor-pointer"
+                    style={{
+                      boxShadow: `8px 8px 0px 0px ${skill.shadow}`,
+                    }}
+                  />
+                </div>
+              </Link>
+              <Link
+                href={skill.href}
+                className="text-orange-200 italic font-mono text-sm hover:text-orange-400 transition-colors"
+              >
+                {skill.label}
+              </Link>
+            </div>
+          ))}
         </div>
 
-        {/* Passing Section */}
-        <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Link href="/passing" aria-label="Passing image">
-              <Image
-                src="/images/JS12-PASSING.jpeg"
-                alt="Stockton Pass"
-                width={200}
-                height={200}
-                className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#000080] cursor-pointer"
-              />
-            </Link>
-          </div>
-          <Link href="/passing" className="text-white italic font-mono block">
-            Passing
-          </Link>
-        </div>
-
-        {/* Shooting Section */}
-        <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Link href="/shooting" aria-label="Shooting image">
-              <Image
-                src="/images/SC30-SHOOTING.jpeg"
-                alt="Curry Shot"
-                width={200}
-                height={200}
-                className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#ffff00] cursor-pointer"
-              />
-            </Link>
-          </div>
-          <Link href="/shooting" className="text-white italic font-mono block">
-            Shooting
-          </Link>
-        </div>
-
-        {/* Basketball IQ Section */}
-        <div className="flex flex-col items-center">
-          <div className="mb-4">
-            <Link href="/basketball-iq" aria-label="Basketball IQ image">
-              <Image
-                src="/images/STEVEKERR-COACHING.jpeg"
-                alt="Kerr Coach"
-                width={200}
-                height={200}
-                className="rounded-3xl shadow-[8px_8px_0px_0px_#10ff00] mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-[12px_12px_0px_0px_#10ff00] cursor-pointer"
-              />
-            </Link>
-          </div>
+        <div className="mt-14 p-6 rounded-2xl border border-white/10 bg-black/30 backdrop-blur-sm">
+          <p className="text-white/70 font-mono text-sm mb-3">
+            The secret all athletes keep to themselves:
+          </p>
           <Link
-            href="/basketball-iq"
-            className="text-white italic font-mono block"
+            href="/secret"
+            className="inline-block px-5 py-2 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-300 italic font-mono text-sm hover:bg-orange-500/40 hover:text-white transition-all duration-300"
           >
-            Basketball IQ
+            Click here
           </Link>
         </div>
-      </div>
 
-      <div className="mt-12">
-        <p className="text-white font-mono mb-4">
-          The secret all athletes keep to themselves:
+        <p className="mt-8 text-white/30 text-xs font-mono">
+          💬 Chat with your AI coach — tap the orange button below
         </p>
-        <Link href="/secret" className="text-white italic font-mono">
-          Click here
-        </Link>
       </div>
     </div>
   );
