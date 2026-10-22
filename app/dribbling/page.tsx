@@ -5,9 +5,9 @@ import Image from 'next/image'
 export default function DribblingPage() {
   return (
     <div className="container mx-auto px-4 py-8 text-center">
-      <h2 className="text-3xl font-bold mb-8 text-white">
+      <h1 className="text-3xl font-bold mb-8 text-white">
         • DRIBBLING
-      </h2>
+      </h1>
       
       <p className="text-white font-mono mb-8 max-w-4xl mx-auto text-center">
         Ball handling is crucial for every player on the court. Good dribbling allows you to create 
@@ -21,11 +21,13 @@ export default function DribblingPage() {
           alt="Kyrie Dribbling"
           width={200}
           height={200}
+          sizes="200px"
+          priority
           className="rounded-3xl shadow-[8px_8px_0px_0px_#ffffff] mx-auto"
         />
       </div>
       
-      <Link href="/" className="text-white italic font-mono">
+      <Link href="/" className="inline-flex items-center min-h-11 text-white underline italic font-mono">
         Back to Home
       </Link>
     </div>
