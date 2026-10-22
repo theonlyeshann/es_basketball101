@@ -26,7 +26,7 @@ for (const [width, height] of [[320, 568], [390, 844], [1440, 900]]) {
     viewportWidth: innerWidth,
   }))
   await page.getByRole('button', { name: 'Open basketball coach chat' }).click()
-  await page.screenshot({ path: `${directory}/chat-${width}.png`, fullPage: true })
+  await page.screenshot({ path: `${directory}/chat-${width}.png`, fullPage: false })
   const chat = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()
   const bounds = await page.locator('form').evaluate(el => {
     const r = (el.closest('dialog') || el.parentElement).getBoundingClientRect()

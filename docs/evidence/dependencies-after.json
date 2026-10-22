@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-22",
+  "scope": "production after changes",
+  "command": "npm audit --omit=dev --json",
+  "vulnerability_counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "note": "Aggregate counts only. Detailed advisories and dependency paths are intentionally excluded from this public report. Run the command locally for details."
+}

@@ -1,0 +1,33 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> basketball-101@1.0.0 test
+> node --import tsx --test tests/*.test.ts
+
+✔ passes validated conversation, mode and abort signal to provider (33.314881ms)
+✔ rejects empty history without provider usage (5.435294ms)
+✔ rejects system injection without provider usage (2.923497ms)
+✔ rejects unknown mode without provider usage (5.417124ms)
+✔ rejects empty content without provider usage (3.666979ms)
+✔ rejects oversized question without provider usage (3.179549ms)
+✔ rejects non-alternating history without provider usage (4.192532ms)
+✔ rejects assistant ending without provider usage (7.730545ms)
+✔ rejects extra fields without provider usage (3.864168ms)
+✔ rejects too many messages without provider usage (6.552672ms)
+✔ rejects oversized context without provider usage (11.072865ms)
+✔ rejects malformed JSON, wrong content type and cross-origin requests (2.335443ms)
+✔ caps bytes even when content-length is absent or false (10.475907ms)
+✔ disabled or missing configuration fails closed (8.064373ms)
+✔ rate limit rejects before provider and supplies retry-after (9.513298ms)
+✔ limiter resets after its window (2.286508ms)
+✔ provider errors and empty answers are sanitized (11.17114ms)
+✔ timeout aborts provider and returns promptly even if provider ignores signal (62.404476ms)
+✔ client disconnect cancels generation (10.339128ms)
+✔ already cancelled request never reaches provider (0.787945ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1843.93689
