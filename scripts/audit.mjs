@@ -29,7 +29,7 @@ for (const [width, height] of [[320, 568], [390, 844], [1440, 900]]) {
   await page.screenshot({ path: `${directory}/chat-${width}.png`, fullPage: true })
   const chat = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze()
   const bounds = await page.locator('form').evaluate(el => {
-    const r = el.parentElement.getBoundingClientRect()
+    const r = (el.closest('dialog') || el.parentElement).getBoundingClientRect()
     return { left: r.left, right: r.right, top: r.top, bottom: r.bottom }
   })
   const summarize = audit => audit.violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.length }))

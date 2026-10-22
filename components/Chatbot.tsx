@@ -94,10 +94,17 @@ export default function Chatbot() {
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 size-14 rounded-full bg-orange-600 hover:bg-orange-700 text-white shadow-2xl flex items-center justify-center">
       <MessageCircle aria-hidden="true" className="size-6" />
     </button>
-    <dialog ref={dialog} onCancel={event => { event.preventDefault(); close() }} onClose={close} aria-labelledby="coach-title" className="coach-dialog text-white bg-neutral-950 border border-white/20 rounded-2xl p-0 shadow-2xl">
+    <dialog ref={dialog} onCancel={event => { event.preventDefault(); close() }} onClose={close} onKeyDown={event => {
+      if (event.key !== 'Tab') return
+      const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), input:not(:disabled), [tabindex="0"]'))
+      const first = controls[0]
+      const last = controls[controls.length - 1]
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus() }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus() }
+    }} aria-labelledby="coach-title" className="coach-dialog text-white bg-neutral-950 border border-white/20 rounded-2xl p-0 shadow-2xl">
       <div className="flex flex-col h-full min-h-0">
         <header className="flex items-center justify-between pl-4 pr-2 py-2 border-b border-white/20 shrink-0">
-          <h2 id="coach-title" className="font-bold text-base">🏀 Basketball 101 Coach</h2>
+          <h2 id="coach-title" className="font-bold text-base">Basketball 101 Coach</h2>
           <button onClick={close} aria-label="Close basketball coach chat" className="size-11 shrink-0 flex items-center justify-center rounded-lg hover:bg-white/10"><X aria-hidden="true" className="size-5" /></button>
         </header>
         <div role="group" aria-label="Coaching mode" className="flex gap-2 p-2 shrink-0">

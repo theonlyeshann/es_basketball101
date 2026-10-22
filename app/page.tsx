@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         <p className="mt-8 pb-12 text-neutral-300 text-xs font-mono">
-          💬 Chat with your AI coach — tap the orange button below
+          Chat with your AI coach — tap the orange button below
         </p>
       </div>
     </div>
