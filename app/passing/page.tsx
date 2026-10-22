@@ -5,9 +5,9 @@ import Image from 'next/image'
 export default function PassingPage() {
   return (
     <div className="container mx-auto px-4 py-8 text-center">
-      <h2 className="text-3xl font-bold mb-8 text-white">
+      <h1 className="text-3xl font-bold mb-8 text-white">
         • PASSING
-      </h2>
+      </h1>
       
       <p className="text-white font-mono mb-8 max-w-4xl mx-auto text-center">
         Basketball is a team sport, and passing is what makes the team work together. Great passers 
@@ -22,11 +22,13 @@ export default function PassingPage() {
           alt="John Stockton Passing"
           width={200}
           height={200}
+          sizes="200px"
+          priority
           className="rounded-3xl shadow-[8px_8px_0px_0px_#000080] mx-auto"
         />
       </div>
       
-      <Link href="/" className="text-white italic font-mono">
+      <Link href="/" className="inline-flex items-center min-h-11 text-white underline italic font-mono">
         Back to Home
       </Link>
     </div>

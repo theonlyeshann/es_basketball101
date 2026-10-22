@@ -9,8 +9,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #1a0a00 25%, #2d1100 40%, #ff6600 60%, #cc4400 75%, #1a0500 90%, #000000 100%);
-  background-attachment: fixed;
+  background: #100905 linear-gradient(135deg, #000 0%, #241006 40%, #6b2800 65%, #1a0500 90%, #000 100%);
+}
+
+:focus-visible {
+  outline: 3px solid #fdba74;
+  outline-offset: 4px;
+}
+
+.coach-dialog {
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  margin: 0;
+  width: min(24rem, calc(100vw - 2rem));
+  height: min(40rem, calc(100dvh - 2rem));
+  max-width: none;
+  max-height: none;
+}
+.coach-dialog::backdrop { background: rgb(0 0 0 / 60%); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @layer utilities {

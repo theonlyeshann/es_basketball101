@@ -1,0 +1,146 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "imageBytes": 3402108,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3000/images/BRYANT24-WORKOUT.png",
+        "width": 596
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/KI11-DRIBBLING.jpeg",
+        "width": 744
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/JS12-PASSING.jpeg",
+        "width": 761
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/SC30-SHOOTING.jpeg",
+        "width": 745
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/STEVEKERR-COACHING.jpeg",
+        "width": 747
+      }
+    ],
+    "scrollWidth": 320,
+    "viewportWidth": 320,
+    "chatBounds": {
+      "left": -64,
+      "right": 296,
+      "top": 31,
+      "bottom": 472
+    },
+    "homeViolations": [],
+    "chatViolations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 2
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "imageBytes": 3402108,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3000/images/BRYANT24-WORKOUT.png",
+        "width": 596
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/KI11-DRIBBLING.jpeg",
+        "width": 744
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/JS12-PASSING.jpeg",
+        "width": 761
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/SC30-SHOOTING.jpeg",
+        "width": 745
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/STEVEKERR-COACHING.jpeg",
+        "width": 747
+      }
+    ],
+    "scrollWidth": 390,
+    "viewportWidth": 390,
+    "chatBounds": {
+      "left": 6,
+      "right": 366,
+      "top": 307,
+      "bottom": 748
+    },
+    "homeViolations": [],
+    "chatViolations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 2
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "imageBytes": 3402108,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3000/images/BRYANT24-WORKOUT.png",
+        "width": 596
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/KI11-DRIBBLING.jpeg",
+        "width": 744
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/JS12-PASSING.jpeg",
+        "width": 761
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/SC30-SHOOTING.jpeg",
+        "width": 745
+      },
+      {
+        "src": "http://127.0.0.1:3000/images/STEVEKERR-COACHING.jpeg",
+        "width": 747
+      }
+    ],
+    "scrollWidth": 1440,
+    "viewportWidth": 1440,
+    "chatBounds": {
+      "left": 1056,
+      "right": 1416,
+      "top": 363,
+      "bottom": 804
+    },
+    "homeViolations": [],
+    "chatViolations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "nodes": 2
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": 1
+      }
+    ]
+  }
+]

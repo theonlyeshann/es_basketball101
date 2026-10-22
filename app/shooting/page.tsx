@@ -5,12 +5,12 @@ import Image from 'next/image'
 export default function ShootingPage() {
   return (
     <div className="container mx-auto px-4 py-8 text-center">
-      <h2 className="text-3xl font-bold mb-8 text-white">
+      <h1 className="text-3xl font-bold mb-8 text-white">
         • SHOOTING
-      </h2>
+      </h1>
       
       <p className="text-white font-mono mb-8 max-w-4xl mx-auto text-center">
-        Shooting is the most obvious skill in basketball - it's how you score points. Good shooters 
+        Shooting is the most obvious skill in basketball - it&apos;s how you score points. Good shooters 
         have consistent form, proper footwork, and follow through. Practice shooting from different 
         spots on the court, work on your free throws, and remember that great shooters are made 
         through thousands of repetitions.
@@ -22,11 +22,13 @@ export default function ShootingPage() {
           alt="Stephen Curry Shooting"
           width={200}
           height={200}
+          sizes="200px"
+          priority
           className="rounded-3xl shadow-[8px_8px_0px_0px_#ffff00] mx-auto"
         />
       </div>
       
-      <Link href="/" className="text-white italic font-mono">
+      <Link href="/" className="inline-flex items-center min-h-11 text-white underline italic font-mono">
         Back to Home
       </Link>
     </div>
